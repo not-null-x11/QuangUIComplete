@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="dangky.css" />
+</head>
+<body>
+    <nav class="nav-bar">
+        <ul class="left list">
+            <li><a href="/quanly">Quản lý</a></li>
+            <li><a href="/datphong">Đặt phòng</a></li>            
+            <li><a class="deactive" href="/">Đăng xuất</a></li>
+        </ul>
+        <ul class="right list">
+            <li><a href="/">Đăng xuất</a></li>
+        </ul>
+    </nav>    
+    <main>
+        <div class="reg-form">
+            <form class="form" action="">
+                <label for="building">Nhà học</label>
+                <input type="text" value="B1" name="Nhà học" disabled id="building">
+                <label for="room">Phòng học</label>
+                <input type="text" value="CLC19" name="Phòng" disabled id="room">
+                <label for="start">Tiết bắt đầu</label>
+                <input type="text" value="2" name="start" disabled id="start">                 
+                <label for="end">Tiết kết thúc</label>
+                <!-- <input type="text" value="" name="end" placeholder="Tiết kết thúc" id="end"> -->
+                <select name="end" id="end">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>                    
+                </select>
+                <button type="submit">Đăng ký</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html> 

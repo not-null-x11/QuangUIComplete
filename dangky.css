@@ -1,0 +1,111 @@
+:root{
+    --main-color: #ffffff;
+    --main-background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+    --nav-bar-height: 3rem;
+    --nav-bar-background: #000F21;    
+    --nav-bar-items: #ffffff;
+    --nav-bar-items-hover: #333333;
+    --nav-bar-items-hover-background: white;               
+    --padding-content: .5rem;    
+    --form-elements-color-border: #03384D;
+}
+ body{
+    font-size: 16px;
+    font-family:'Source Sans Pro', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;   
+    background: var(--main-background); 
+    color: var(--main-color);
+}
+ .nav-bar{
+    background-color: var(--nav-bar-background);
+    position: relative;
+}
+    .toggle{
+        background-color: var(--nav-bar-background);
+        color: var(--nav-bar-items);
+        min-height: var(--nav-bar-height);        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 200%;  
+        display: none;      
+    }
+    .nav-bar .list{
+        list-style-type: none;
+        padding: 0;
+        margin: 0 10%;
+    }
+        .list li{
+            display: inline-block;
+        }
+        .list .deactive{
+            display: none;
+        }
+        .list a{
+            color: var(--nav-bar-items);
+            text-decoration: none;
+            display: block;
+            padding: .75rem;
+        }
+        .list a:hover{
+            background-color: var(--nav-bar-items-hover-background);
+            color: var(--nav-bar-items-hover);            
+        }
+    .nav-bar .right{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }           
+ .reg-form{
+    margin: 2rem 30%;
+}    
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}  
+    .form label{
+        font-size: 150%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: lighter;
+        color: #03384D;
+        width: 200px;
+        margin-top: 1.5rem;        
+        cursor: pointer;
+    }
+    .form input, .form button, .form select{
+        font-size: 100%;
+        background-color: #f6f6f6;
+        color: #2A2824;
+        margin-bottom: 5px;
+        padding: 1rem;
+        border: none;
+        border-right: 2px solid var(--form-elements-color-border);
+        border-bottom: 2px solid var(--form-elements-color-border);
+        border-radius: 5px;
+    }
+    .form button{
+        display: flex;
+        cursor: pointer;
+        background-color: #2A2824;
+        border: 1px solid #2A2824;
+        color: #ffffff;
+        position: absolute;
+        top: 103%;
+        right: 0;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 1rem 2.5rem;
+    }
+    .form button:hover{
+        background-color: #ffffff;
+        color: #2A2824;
+    }
+ @media screen and (max-width: 420px){    
+    table{font-size: x-small;}
+}    
+@media (max-width: 400px){    
+    body{font-size: 12px;}
+}

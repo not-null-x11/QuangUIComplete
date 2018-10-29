@@ -1,0 +1,90 @@
+:root{
+    --main-color: #ffffff;
+    --main-background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+    --nav-bar-height: 3rem;
+    --nav-bar-background: #000F21;    
+    --nav-bar-items: #ffffff;
+    --nav-bar-items-hover: #333333;
+    --nav-bar-items-hover-background: white;               
+    --padding-content: .5rem;
+    --table-color-content: #f6f6f6;
+}
+body{
+    font-size: 16px;
+    font-family:'Source Sans Pro', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;   
+    background: var(--main-background); 
+    color: var(--main-color);
+}
+ .nav-bar{
+    background-color: var(--nav-bar-background);
+    position: relative;
+}
+    .nav-bar .list{
+        list-style-type: none;
+        padding: 0;
+        margin: 0 10%;
+    }
+        .list li{
+            display: inline-block;
+        }
+        .list .deactive{
+            display: none;
+        }
+        .list a{
+            color: var(--nav-bar-items);
+            text-decoration: none;
+            display: block;
+            padding: .75rem;
+        }
+        .list a:hover{
+            background-color: var(--nav-bar-items-hover-background);
+            color: var(--nav-bar-items-hover);            
+        }
+    .nav-bar .right{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }           
+ .wrapper{
+    margin: 5% 10%;    
+    height: 70vh;   
+}
+    .wrapper .table-data{     
+        display: flex;
+        flex-direction: column;
+    }
+    .table{
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+        .table th, .table td{
+            padding: var(--padding-content);            
+        }    
+        .table th{            
+            font-weight: normal;
+            background-color: #232323;
+            color: #ffffff;
+        }
+        .table td{            
+            background-color: #ffffff;
+            color: black;
+        }        
+        .table td a{            
+            color: black;
+            text-decoration: none;
+        }        
+        thead th{text-align: left;}
+        tbody tr:hover td, tbody tr:hover td a{
+            cursor: pointer;
+            color: #ffffff;
+            background: #2C2C2C;
+        }
+ @media (max-width: 400px){    
+    body{font-size: 12px;}
+} 
+ @media screen and (max-width: 420px){    
+    table{font-size: x-small;}
+} 

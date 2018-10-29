@@ -1,0 +1,208 @@
+:root{
+    --main-color: #000;
+    --main-background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+    --nav-bar-height: 3rem;
+    --nav-bar-background: #333333;    
+    --nav-bar-items: #ffffff;
+    --nav-bar-items-hover: #333333;
+    --nav-bar-items-hover-background: white;               
+    --padding-content: .5rem;    
+}
+
+body{
+    font-size: 16px;
+    font-family:'Source Sans Pro', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;   
+    background: var(--main-background); 
+    color: var(--main-color);
+}
+
+   
+    .nav-bar{
+        grid-column: 1/13;
+        grid-row: 1/2;
+        background-color: var(--nav-bar-background);
+        position: relative;
+    }
+        .nav-bar .list{
+            list-style-type: none;
+            padding: 0;
+            margin: 0 10%;
+        }
+            .list li{
+                display: inline-block;
+            }
+            .list .deactive{
+                display: none;
+            }
+            .list a{
+                color: var(--nav-bar-items);
+                text-decoration: none;
+                display: block;
+                padding: .75rem;
+            }
+            .list a:hover{
+                background-color: var(--nav-bar-items-hover-background);
+                color: var(--nav-bar-items-hover);            
+            }
+        .nav-bar .right{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }    
+        
+        .container-{
+            display:grid;
+            grid-template: repeat(12,1fr)/repeat(12,1fr);
+            max-width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        
+        
+        
+            .right-table{
+                grid-row: 1/13;
+                grid-column: 2/12;
+                margin-bottom:0;
+                margin-top:1rem;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                margin: 3rem 5rem;
+                padding: 1rem;
+                }
+            
+            .current-week{
+                font-weight: 600;
+                position: absolute;
+                top:-20px;
+                right:2%;
+                }
+                .table-header{
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .table-header > button{
+                    width:50px;
+                    height:30px;
+                    background: transparent;
+                    border: none;
+                }
+                .table-header button i{
+                    width:3vw;
+                    height:4vh;
+                    
+                }
+                .table-header h3{
+                    margin:0 1rem .5rem;   
+                }
+                .right-table .table{
+                    background-color:#f6f6f6;
+                    color:#000;
+                    width:100%;
+                    border: 1px solid gray ;
+                    margin-top:.5rem;
+                    text-align: center;
+                }
+                
+                .table td{
+                    border: 1px solid gray;
+                }
+                
+                .table th{
+                    background-color:#2D3142;
+                    color:#fff;
+                }
+                
+                .table-content{
+                    width:100%;
+                    margin-top:2rem;
+                    position: relative;
+                }
+                
+                .describe{
+                    width: 100%;
+                    min-height: 80px;
+                    background-color:snow;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    margin: 1rem .5rem;
+                    padding: .5rem 1rem;
+                }
+                
+                .describe span{
+                    margin-left:.75rem;
+                }
+                
+                .item1 i {
+                    color:black;
+                    }
+                    
+                    .item2 i{
+                        color:gray;
+                    }
+                    
+                    .item3 i{
+                        color: rgb(226, 188, 188);
+                    }
+                    
+                    @media(max-width:450px){
+                        .container- .content .right-table{
+                            grid-column: 1/13;
+                            grid-row: 3/13;
+                            margin-top:0;
+                        }
+                        
+                        .describe{
+                            font-size:13px;
+                        }
+                        
+                        .content .btn{
+                            padding: .25rem .5rem;
+                            margin-top:0;
+                        }
+                        
+                        
+                    }
+                    
+                    @media(max-width:780px){
+
+                        .right-table{
+                            grid-row: 1/13;
+                            grid-column: 1/13;
+                            margin: 2rem 0rem;
+                        }
+                        .table-content{
+                            margin-top:0rem;
+                        }
+                        .right-table .table-header h3{
+                            font-size: 13px;
+                        }
+                        .table-content .table td,.table-content .table th{
+                            padding:.25rem;
+                            font-size:11px;
+                        }
+                        
+                        .describe{
+                            font-size:11px;
+                            min-height: 80px;
+                        }
+                        
+                        .current-week{
+                            font-size:13px
+                        }
+                        
+                        
+                    }
+                    
+                    @media (max-width: 400px){    
+                        body{font-size: 12px;}
+                    } 
