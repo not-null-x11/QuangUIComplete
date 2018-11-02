@@ -25,7 +25,7 @@
         <div class="right-table">
             <div class="table-header">
                 <button><i class="fas fa-arrow-left"></i></button>
-                <h3>Tên phòng học</h3>
+                <h3 id="id-room">Tên phòng học</h3>
                 <button><i class="fas fa-arrow-right"></i></button>
             </div>
             <div class="table-content">
@@ -35,140 +35,126 @@
                 <table class="table table-dark">
                     <thead>
                       <tr>
-                        <th scope="col" title="STT" style="line-height:16px">STT</th>
-                        <th scope="col"  id="monday" title="">Thứ 2</th>
+                        <th scope="col" title="STT" style="line-height:16px;border-top-left-radius:35%; border:none">STT</th>
+                        <th scope="col"  title="">Thứ 2</th>
                         <th scope="col" title="">Thứ 3</th>
                         <th scope="col" title="">Thứ 4</th>
                         <th scope="col" title="">Thứ 5</th>
                         <th scope="col" title="">Thứ 6</th>
-                        <th scope="col" title="">Thứ 7</th>
+                        <th scope="col" id="saturday" title="" style="border-top-right-radius:35%;border:none">Thứ 7</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row" title="7:00 - 7:50" >1</th>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
+                        <td width="15%" class="monday available">xvcx</td>
+                        <td width="15%" class="tuesday"></td>
+                        <td width="15%" class="wednesday"></td>
+                        <td width="15%" class="thursday"></td>
+                        <td width="15%" class="friday"></td>
+                        <td width="15%" class="saturday"></td>
                       </tr>
                       <tr>
                         <th scope="row" title="7:50 - 8:40">2</th>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
+                        <td width="15%" class="monday"></td>
+                        <td width="15%" class="tuesday"></td>
+                        <td width="15%" class="wednesday"></td>
+                        <td width="15%" class="thursday"></td>
+                        <td width="15%" class="friday"></td>
+                        <td width="15%" class="saturday"></td>
                       </tr>
                       <tr>
                         <th scope="row" title="8:50 - 9:30">3</th>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
+                        <td width="15%" class="monday"></td>
+                        <td width="15%" class="tuesday"></td>
+                        <td width="15%" class="wednesday"></td>
+                        <td width="15%" class="thursday"></td>
+                        <td width="15%" class="friday"></td>
+                        <td width="15%" class="saturday"></td>
                       </tr>
                       <tr>
                         <th scope="row" title="9:30 - 10:20">4</th>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
+                        <td width="15%" class="monday"></td>
+                        <td width="15%" class="tuesday"></td>
+                        <td width="15%" class="wednesday"></td>
+                        <td width="15%" class="thursday"></td>
+                        <td width="15%" class="friday"></td>
+                        <td width="15%" class="saturday"></td>
                       </tr>
                       <tr>
                         <th scope="row" title="10:30 - 11:20">5</th>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
+                        <td width="15%" class="monday"></td>
+                        <td width="15%" class="tuesday"></td>
+                        <td width="15%" class="wednesday"></td>
+                        <td width="15%" class="thursday"></td>
+                        <td width="15%" class="friday expire" >ew</td>
+                        <td width="15%" class="saturday booked" >ew</td>
                       </tr>
                       <tr>
                         <th scope="row" title="13:30 - 14:20">6</th>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
+                        <td width="15%" class="monday"></td>
+                        <td width="15%" class="tuesday"></td>
+                        <td width="15%" class="wednesday"></td>
+                        <td width="15%" class="thursday"></td>
+                        <td width="15%" class="friday"></td>
+                        <td width="15%" class="saturday"></td>
                       </tr>
                       <tr>
                         <th scope="row" title="14:20 - 15:10">7</th>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
+                        <td width="15%" class="monday"></td>
+                        <td width="15%" class="tuesday"></td>
+                        <td width="15%" class="wednesday"></td>
+                        <td width="15%" class="thursday"></td>
+                        <td width="15%" class="friday"></td>
+                        <td width="15%" class="saturday"></td>
                       </tr>
                       <tr>
                         <th scope="row" title="15:20 - 16:10">8</th>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
+                        <td width="15%" class="monday"></td>
+                        <td width="15%" class="tuesday"></td>
+                        <td width="15%" class="wednesday"></td>
+                        <td width="15%" class="thursday"></td>
+                        <td width="15%" class="friday"></td>
+                        <td width="15%" class="saturday"></td>
                       </tr>
                       <tr>
                         <th scope="row" title="16:10 - 17:00">9</th>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
+                        <td width="15%" class="monday"></td>
+                        <td width="15%" class="tuesday"></td>
+                        <td width="15%" class="wednesday"></td>
+                        <td width="15%" class="thursday"></td>
+                        <td width="15%" class="friday"></td>
+                        <td width="15%" class="saturday"></td>
                       </tr>
                       <tr>
                         <th scope="row" title="18:30 - 19:20">11</th>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
+                        <td width="15%" class="monday"></td>
+                        <td width="15%" class="tuesday"></td>
+                        <td width="15%" class="wednesday"></td>
+                        <td width="15%" class="thursday"></td>
+                        <td width="15%" class="friday"></td>
+                        <td width="15%" class="saturday"></td>
                       </tr>
                       <tr>
                         <th scope="row" title="19:20 - 20:10">12</th>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
+                        <td width="15%" class="monday"></td>
+                        <td width="15%" class="tuesday"></td>
+                        <td width="15%" class="wednesday"></td>
+                        <td width="15%" class="thursday"></td>
+                        <td width="15%" class="friday"></td>
+                        <td width="15%" class="saturday"></td>
                       </tr>
                       <tr>
-                        <th scope="row" title="20:20 - 21:10">13</th>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
-                        <td width="15%"></td>
+                        <th scope="row" title="20:20 - 21:10" style="border-bottom-left-radius:35%;">13</th>
+                        <td width="15%" class="monday"></td>
+                        <td width="15%" class="tuesday"></td>
+                        <td width="15%" class="wednesday"></td>
+                        <td width="15%" class="thursday"></td>
+                        <td width="15%" class="friday"></td>
+                        <td width="15%" class="saturday" style="border-bottom-right-radius:35%;border:none"></td>
                       </tr>
                     </tbody>
                   </table>
-            </div>
-            <div class="describe">
-                <div class="item1">
-                    <i class="fas fa-square"></i>
-                    <span>Hết hạn</span>
-                </div>
-                <div class="item2">
-                    <i class="fas fa-square"></i>
-                    <span>Đặt rồi</span>
-                </div>
-                <div class="item3">
-                    <i class="fas fa-square"></i>
-                    <span>Chưa đặt</span>
-                </div>
             </div>
         </div>
     </div>

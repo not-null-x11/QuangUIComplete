@@ -102,18 +102,38 @@ body{
                 .table-header h3{
                     margin:0 1rem .5rem;   
                 }
-                .right-table .table{
+                .table{
                     background-color:#f6f6f6;
                     color:#000;
                     width:100%;
-                    border: 1px solid gray ;
+                    border: none;
+                    border-radius:10%;
                     margin-top:.5rem;
                     text-align: center;
+                    border-bottom-right-radius: 5%;
                 }
                 
                 .table td{
                     border: 1px solid gray;
                 }
+
+                    title{
+                        background-color:dodgerblue;
+                    }
+                    td.available{
+                        color:#fff;
+                    }
+                    td.expire{
+                        background-color: gray;
+                        user-select: none;
+                        color:gray;
+                    }
+                    td.booked{
+                        background-color: red;
+                        color:red;
+                        user-select: none;
+                    }
+
                 
                 .table th{
                     background-color:#2D3142;
@@ -125,34 +145,6 @@ body{
                     margin-top:2rem;
                     position: relative;
                 }
-                
-                .describe{
-                    width: 100%;
-                    min-height: 80px;
-                    background-color:snow;
-                    display:flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: flex-start;
-                    margin: 1rem .5rem;
-                    padding: .5rem 1rem;
-                }
-                
-                .describe span{
-                    margin-left:.75rem;
-                }
-                
-                .item1 i {
-                    color:black;
-                    }
-                    
-                    .item2 i{
-                        color:gray;
-                    }
-                    
-                    .item3 i{
-                        color: rgb(226, 188, 188);
-                    }
                     
                     @media(max-width:450px){
                         .container- .content .right-table{
